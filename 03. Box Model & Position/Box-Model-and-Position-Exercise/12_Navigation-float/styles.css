@@ -1,0 +1,93 @@
+body {
+    background-color: #EEE;
+    color: #333;
+    font: 17px/1.5 'Roboto', sans-serif;
+    padding: 2em;
+}
+
+header .site-title a{
+    font-family: Helvetica, sans-serif;
+    color: #000;
+    font-size: 3em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .site-title,
+header nav{
+    display: inline-block;
+}
+
+header nav ul li{
+    display: inline; 
+}
+
+body > :first-child{
+    border-bottom:  2px solid black;
+
+}
+
+header nav{
+    float: right;
+}
+
+img {
+    padding: 0.5em;
+    background-color: white;
+    border: 0.2em solid black;
+    box-shadow: 0 0 1em 0.5em rgb(0, 0, 0, 0.25);
+    margin-left: 20px;
+}
+
+h1, h3 {
+    font-family: 1em 1.2 Georgia, serif;
+}
+
+nav a {
+    color: rgb(0, 102, 0);
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+main, aside {
+    display: inline-block;
+}
+
+main {
+    max-width: 65%;
+}
+
+aside {
+    vertical-align: top;
+    padding: 0.2em 0 0 3em;
+}
+
+.align-right {
+    float: right;
+    margin: 0 0 1.5em 1.5em;
+}
+
+.align-left {
+    float: left;
+    margin: 0 1.5em 1.5em 0;
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    max-width: 47%;
+    opacity: 0.7;
+    padding-left: 1em;
+    margin: 0 0 1.5em 1.5em;
+    float: right;
+}
+
+.right-border {
+    max-width: 47% ;
+    border-right: 1px solid rgba(107, 107, 107, 0.486);
+    padding-right: 1em;
+}
+footer {
+    text-align: right;
+}
+
+
