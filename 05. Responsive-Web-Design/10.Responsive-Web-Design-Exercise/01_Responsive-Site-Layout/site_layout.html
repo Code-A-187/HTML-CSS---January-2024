@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Site Layout</title>
+    <style>
+
+        html {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 0.5em;
+        }
+        
+        header {
+            padding: 1em;
+        }
+
+        main {
+            display: flex;
+            gap: 0.5em;
+
+        }
+        
+        footer {
+            padding: 0.4em;
+        }
+
+        .left_align, .right_align {
+            display: block;
+            border-radius: 0.2em;
+            background-color: #b5d8ff;
+            margin: 0em;
+        }
+
+        .left_align {
+            flex: 0 1 15%;
+            padding: 1em;
+            line-height: 1.5em;
+            list-style-type: none;
+        }
+
+        .right_align {
+            flex: 1 0 0;
+            padding: 0.5em;
+        }
+
+        header, footer {
+            background: #b5d8ff;
+            border-radius: 0.2em;
+        }
+
+        @media (max-width: 500px) {
+            main {
+                flex-direction: column;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome</h1>
+    </header>
+    <main>
+        <ul class="left_align">
+            <li>Home</li>
+            <li>Tasks</li>
+            <li>Create</li>
+        </ul>
+        <article class="right_align">
+            <h2>Tasks: 6</h2>
+            <ul>
+                <li>Open: 3</li>
+                <li>In Progress: 1</li>
+                <li>Done: 2</li>
+            </ul>
+        </article>
+    </main>
+    <footer>&copy; 2021 - Task Board</footer>
+</body>
+</html>

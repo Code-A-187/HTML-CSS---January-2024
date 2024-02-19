@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Media Boxes</title>
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;  
+        }
+
+        html {
+            font: 14px/1.5 Helvetica, sans-serif
+        }
+
+        body {
+            background:  rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2em;
+            min-height: 100vh;
+        }
+
+        body, input button {
+            font:inherit
+        }
+
+        form, legend {
+            border-radius: 0.2em;
+            border: 0.1px solid black;
+            background-color: rgb(238, 238, 238);
+            box-shadow: 0 0 0.5em 0 rgba(0, 0 , 0 , 0.3);
+        }
+
+        form {
+            display:block;
+            padding: 2em;
+            display: flex;
+            gap: 1em;
+            flex-direction: column;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            line-height: 1;
+            padding-bottom: 0.2em;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            padding: 0.5em 1em;
+            border: 0.1px solid #ccc;
+            border-radius:0.2em;
+        }
+
+        input[type="submit"] {
+            display: block;
+            padding: 0.5em 0.5em;
+            border-radius: 0.5em;
+            max-width: 6em;
+            color: white;
+            background-color: black;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        legend {
+            position: relative;
+            padding: 0.5em 6em 0.5em 0.7em;
+            top: 1em;
+            max-width: 10em;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .field i {
+            position: absolute;
+        }
+
+        .icon, .fa-solid {
+            padding: 10px;
+            min-width: 40px;
+        }
+
+        @media(min-width: 720px) {
+            label  {
+                display: inline-block;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <section class="viewport">
+
+        <legend>Login</legend>
+
+        <form action="#">
+
+            <div class="field">
+                <label for="login-username">Username</label>
+                <i class="fa fa-user icon"></i>
+                <input type="text" name="username" id="login-username">
+            </div>
+            
+            <div class="field">
+                <label for="login-password">Password</label>
+                <i class="fa-solid fa-key"></i>
+                <input type="password" name="password" id="login-password">
+            </div>
+            
+            
+            <input type="submit" value="Login">
+        </form>
+
+    </section>
+</body>
+</html>

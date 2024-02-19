@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 18px/1.5 "Ubuntu", sans-serif;
+}
+
+h1 {
+    font-size: 2.66em;
+    color: #313131;
+    font-weight: bold;
+    border-right: 3px solid #DBDBDB;
+    margin:0 auto;
+    padding-right: 0 48px 0 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    display:flex;
+    align-items: start;
+    border: 2px solid black;
+}
+
+.site-title p {
+    text-align: end;
+    font-weight: bold;
+}
+
+.site-section.site-header nav ul{
+    display: flex;
+    border: 2px solid black;
+}
+
+.site-section.site-header nav li {
+    list-style: none outside;
+    padding: 0 0.5em;
+}
+
+.site-header nav a {
+    text-decoration: none;
+}
+
+.site-section.main {
+    background-color: #353434;
+}
+
+.container {
+    max-width: 1565px;
+    margin: 0 auto;
+}

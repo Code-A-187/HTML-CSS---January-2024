@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 2em;
+    background: #eee;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p, ul {
+    padding-bottom: 1.5em;
+}
+
+
+.ui-fancy-quotes {
+    border: 2px solid #000;
+    display: flex;
+    gap: 2em;
+    width:100%
+}
+
+.ui-fancy-quotes .quote {
+    container: quote / inline-size;
+}
+
+.ui-fancy-quotes main,
+.ui-fancy-quotes aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.ui-fancy-quotes main {
+    gap: 2em
+}
+
+.ui-fancy-quotes main > .quote {
+    flex: 1 0 auto;
+}
+
+.ui-fancy-quotes aside > .quote {
+    flex: 1 0 auto;
+}
+
+.ui-fancy-quotes .quote {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ui-fancy-quotes .quote .inner {
+    flex-grow: 1;
+    background: #fff;
+    padding: 0.8em 1.2em;
+    display: flex;
+    gap: 2em;
+}
+
+
+.ui-fancy-quotes .quote blockquote:before {
+    display:block;
+    content: '\201C';
+    font-size: 4em;
+    line-height: 1;
+
+
+}
+
+.ui-fancy-quotes .quote .media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ui-fancy-quotes .quote .media figure {
+
+}
+
+.ui-fancy-quotes .quote .avatar {
+    width: 8em;
+    display: block;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #090;
+}
+
+@container quote (max-width: 400px) {
+    .ui-fancy-quotes .quote .inner {
+        flex-direction: column;
+    }
+}

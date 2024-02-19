@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap");
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font: 18px/1.5 "Karla", sans-serif;
+}
+body {
+    background-image: url("images/poster.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top center;
+    aspect-ratio: 1/1;
+}
+
+h1, h2 {
+    font: 90px/1.2 "Cormorant Infant", serif;
+    font-weight: bold;
+}
+h2 {
+    font-size: 70px;
+}
+.container {
+    max-width: 1115px;
+    margin: 0 auto;
+}
+.site-section.banner {
+    padding-bottom: 7.0em;
+}
+.site-section.banner .container {
+    color: white;
+    text-align: center;
+}
+.site-section.banner h1 {
+    font-size: 5.63em;
+    font-weight: bold;
+    line-height: 1.26;
+    padding-bottom: 160px;
+}
+.site-section {
+    padding: 2em 3em;
+}
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10em;
+}
+.site-header nav ul {
+    display: flex;
+}
+.site-header nav li {
+    list-style: none outside;
+    padding: 0 1em;
+}
+.site-header nav a {
+    text-decoration: none;
+    font-size: 20px;
+}
+.site-title a {
+    display: block;
+    width: 100px;
+    height: 65px;
+    overflow: hidden;
+    text-indent: -200vw;
+    background-image: url('images/logo.webp');
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.white {
+    background-color: #F8F0E9;
+}
+.red {
+    background-color: #E14747;
+}
+.site-footer {
+    background-color: #352B2A;
+}
+.testimonial-wrapper h2 {
+    padding-top: 95px;
+    line-height: 0.8;
+}
+.testimonial-wrapper {
+    padding-top: 50px;
+    padding-bottom: 130px;
+    line-height: 0.1;
+}
+.support { 
+    text-align: center;
+}
+.support .container{
+    padding: 91px 0;
+}
+.support .container p {
+    padding-top: 65px;
+}
+button {
+    display: block;
+    padding: 0.5em 1em;
+    display: block;
+}
+.mind .wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center
+}
+.mind .wrapper h2 {
+    line-height: 0.9;
+}
+.mind .wrapper p {
+    max-width: 500px;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.mind .wrapper .button.left {
+    align-self: start;
+    margin-left: 320px;
+    margin-bottom: 75px;
+}
+
+.mind .wrapper .button.center {
+    margin-bottom: 75px;
+}
+
+.button.left {
+    float:left;
+}
+.find{
+    text-align: center;
+}
+.find .container {
+    padding-top: 141px;
+    padding-bottom: 77px;
+}
+.button.center.style {
+    font-size: 14px;
+    padding: 15px 20px;
+    border-radius: 50px;
+    color: #000;
+    text-decoration: none;
+    background-color: #FAD87A;
+}
+.find p {
+    padding-top: 135px;
+    padding-bottom: 80px;
+}
+.mind .wrapper img {
+    display: block;
+    width: 60%;
+    height: auto;
+    margin-top: 78px;
+    margin-bottom: 95px;
+}
+.white-text {
+    color: #fff;
+}
+.site-footer img {
+    
+    max-width: 75px;
+    padding-bottom: 60px;
+}
+.site-footer .last {
+    padding-top: 28px;
+    font-size: 14px;
+    color: #3F495E;
+}
+.site-footer .wrapper {
+    padding: 60px 0 66px 156px;
+}
